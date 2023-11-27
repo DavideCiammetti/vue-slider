@@ -33,6 +33,7 @@ createApp({
         };
     },
     methods: {
+         // al click su frecce in alto cambia img 
         prev(){
             console.log('ciao1');
             this.curIndex --;
@@ -47,6 +48,10 @@ createApp({
                 this.curIndex = 0; 
             }
         },
+        // cambio img al click del thumb
+        changeThumb(index){
+            this.curIndex = index;
+        }
     },
 }).mount('#app');
 
